@@ -282,3 +282,242 @@ footer{
     width: 100%;
     background-color: #EDBFFF;
 }
+
+
+
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Styles for screens smaller than 768px (typical phone screen) */
+@media (max-width: 768px) {
+    #nav img {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    #nav-part2 {
+        gap: 10px;
+    }
+
+    #nav h4 {
+        font-size: 14px;
+    }
+
+    .page1 h1 {
+        font-size: 6vw;
+        margin-left: 5vw;
+    }
+
+    .page1 h2 {
+        font-size: 6vw;
+        margin-left: 15vw;
+    }
+
+    .page1 video {
+        width: 80%;
+        margin-top: 8vw;
+    }
+}
+
+/* Styles for screens between 769px and 1024px (typical tablet screen) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #nav img {
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    #nav-part2 {
+        gap: 20px;
+    }
+
+    #nav h4 {
+        font-size: 18px;
+    }
+
+    .page1 h1 {
+        font-size: 8vw;
+        margin-left: 5vw;
+    }
+
+    .page1 h2 {
+        font-size: 8vw;
+        margin-left: 15vw;
+    }
+
+    .page1 video {
+        width: 70%;
+        margin-top: 5vw;
+    }
+}
+
+/* Styles for screens larger than 1024px (typical desktop/laptop screen) */
+@media (min-width: 1025px) {
+    #nav img {
+        height: 150px;
+        margin-top: 70px;
+    }
+
+    #nav-part2 {
+        gap: 30px;
+    }
+
+    #nav h4 {
+        font-size: 20px;
+    }
+
+    .page1 h1 {
+        font-size: 8vw;
+        margin-left: 6vw;
+    }
+
+    .page1 h2 {
+        font-size: 8vw;
+        margin-left: 26vw;
+    }
+
+    .page1 video {
+        width: 60%;
+        margin-top: 10vw;
+    }
+}
+
+/* Additional responsive styles can be added as needed */
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+}
+
+#nav {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+}
+
+#nav #circle {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.page2 {
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index: 9;
+}
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+}
+
+.page4 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 170px 100px;
+}
+
+.page5 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+
+/* Define styles for other sections and elements as needed */
+
+footer {
+    height: 90vh;
+    width: 100%;
+    background-color: #EDBFFF;
+}
+
+
+@media (max-width: 768px) { /* Adjust the maximum width as needed */
+    .page2 {
+        min-height: 80vh;
+        width: 100%;
+        padding: 50px 5vw;
+        border-bottom: 2px solid #6c6c6c;
+        position: relative;
+        z-index: 9;
+    }
+    
+    .page2 h1 {
+        font-size: 4vw;
+        font-weight: 500;
+        color: #111;
+        margin-bottom: 20px;
+    }
+    
+    .page2-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .page2-left,
+    .page2-right {
+        width: 100%;
+    }
+    
+    .page2-left h2 {
+        font-size: 3vw;
+        font-weight: 300;
+        color: #111;
+        line-height: 4vw;
+        text-align: center;
+    }
+    
+    .page2-right p {
+        font-size: 16px;
+        color: #111;
+        text-align: center;
+    }
+    
+    .page2-right button {
+        width: 100%;
+        border-radius: 50px;
+        border: none;
+        padding: 15px 0;
+        background-color: #EDBFFF;
+        color: #111;
+        margin-top: 20px;
+    }
+}
